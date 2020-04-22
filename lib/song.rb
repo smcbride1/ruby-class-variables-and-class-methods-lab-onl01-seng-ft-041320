@@ -32,9 +32,9 @@ class Song
 
   def genre_count
     genre_count = {}
-    genres.each do |a|
-      genre_count[a] = 0 if !genre_count.has_key?(a)
-      genre_count[a] += 1
+    genres.each do |g|
+      genre_count[g] = 0 if !genre_count.has_key?(g)
+      genre_count[g] += 1
     end
     genre_count
   end
