@@ -21,11 +21,22 @@ class Song
     @@genres
   end
 
-  def artists_count
-    artists_count = {}
-    artists.each do |a|
-      artists_count[a] = 0 if !artists_count.has_key?(a)
-      artists_count[a] += 1
+  def artist_count
+    artist_count = {}
+    artist.each do |a|
+      artist_count[a] = 0 if !artist_count.has_key?(a)
+      artist_count[a] += 1
     end
+    artist_count
   end
+
+  def genre_count
+    genre_count = {}
+    genres.each do |a|
+      genre_count[a] = 0 if !genre_count.has_key?(a)
+      genre_count[a] += 1
+    end
+    genre_count
+  end
+
 end
