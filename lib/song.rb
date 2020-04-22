@@ -26,4 +26,5 @@ class Song
     artists.each do |a|
       artists_count[a] = 0 if !artists_count.has_key?(a)
       artists_count[a] += 1
+    end
 end
